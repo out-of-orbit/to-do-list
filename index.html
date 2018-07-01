@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div id="header">
+        <h1>To-Do List</h1>
+    </div>
+    <div id="container">
+        <div class="form addTask">
+            <form>
+                <input type="text" id="name" placeholder="Enter task">
+                <select id="priority">
+                    <option value="0">Choose priority</option>
+                    <option value="1">low</option>
+                    <option value="2">medium</option>
+                    <option value="3">high</option>
+                </select>
+                <input type="submit" id="add" value="Add Task">
+            </form>
+        </div>    
+        <div class="form filterTasks">
+            <form>
+                <input type="text" id="filter" placeholder="Filter tasks by priority">
+            </form>
+        </div>
+        <div class="form clearTasks">
+            <form>
+                <input type="submit" id="clear" value="Clear all tasks">
+            </form>
+        </div>
+        <div class="tasks">
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
